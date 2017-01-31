@@ -1,0 +1,9 @@
+<input ng-model="controller.search"
+       ng-model-options="{debounce:1000}"
+       ng-change="controller.fetch()" />
+
+<ul>
+    <li ng-repeat="movie in controller.movies">
+        {{movie.title}}
+    </li>
+</ul>

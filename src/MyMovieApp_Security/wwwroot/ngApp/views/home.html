@@ -1,0 +1,16 @@
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="movie in controller.movies">
+        {{movie.title}}
+        <!--<a ui-sref="Edit({id: movie.id})">edit</a>
+        <a ui-sref="Delete({id: movie.id})">delete</a>-->
+        <span class="badge">
+            <button ui-sref="Delete({id: movie.id})" type="button" class="btn btn-primary btn-xs">Delete Movie</button>
+            <button ui-sref="Edit({id: movie.id})" type="button" class="btn btn-primary btn-xs">Edit Movie</button>
+        </span>
+    </li>
+</ul>
+
+
+<div class="container">
+    <button ui-sref="Add" type="button" class="btn btn-primary btn-lg">Add A Movie</button>
+</div>

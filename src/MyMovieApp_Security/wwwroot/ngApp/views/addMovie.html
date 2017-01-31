@@ -1,0 +1,43 @@
+﻿<form ng-submit="controller.addMovie()">
+    <!--<div>
+        <label for="title">title:</label>
+        <input id="title" ng-model="controller.movieToCreate.title" />
+    </div>
+    <div>
+        <label for="director">director:</label>
+        <input id="director" ng-model="controller.movieToCreate.director" />
+
+        <br />
+        Categories List<select ng-model="controller.movieToCreate.CategoryID">
+            <option value="0"></option>
+            <option value="1">Drama</option>
+            <option value="2">Sci-Fi</option>
+            <option value="3">Romance</option>
+        </select>
+
+    </div>
+    <input type="submit" value="Save" />-->
+    <div class="container">
+        <h2>Add Movie Page</h2>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" ng-model="controller.movieToCreate.title" class="form-control" id="email" placeholder="Enter movie title">
+        </div>
+        <div class="form-group">
+            <label for="dir">Director:</label>
+            <input type="text" ng-model="controller.movieToCreate.director" class="form-control" id="pwd" placeholder="Enter director name">
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select class="dropdown" ng-model="controller.movieToCreate.CategoryID">
+                <option value="0"></option>
+                <option value="1">Drama</option>
+                <option value="2">Sci-Fi</option>
+                <option value="3">Romance</option>
+            </select>
+
+        </div>
+        <button type="submit" class="btn btn-default">Add</button>
+
+    </div>
+</form>

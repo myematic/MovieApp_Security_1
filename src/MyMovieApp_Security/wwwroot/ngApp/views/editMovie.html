@@ -1,0 +1,20 @@
+﻿<form ng-submit="controller.editMovie()">
+    <div>
+        <label for="title">title:</label>
+        <input id="title" ng-model="controller.movieToEdit.title" />
+    </div>
+    <div>
+        <label for="director">director:</label>
+        <input id="director" ng-model="controller.movieToEdit.director" />
+
+        <br />
+        Categories List<select ng-model="controller.movieToEdit.CategoryID">
+            <option value="0"></option>
+            <option value="1">Drama</option>
+            <option value="2">Sci-Fi</option>
+            <option value="3">Romance</option>
+        </select>
+
+    </div>
+    <input type="submit" value="Save" />
+</form>
